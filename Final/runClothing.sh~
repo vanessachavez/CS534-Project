@@ -1,0 +1,3 @@
+cp background.jpg ./backgroundcopy.jpg
+python fashion.py backgroundcopy.jpg ./backgroundmask.jpg
+python clothing.py background.jpg foregroundpng.png backgroundmask.jpg
