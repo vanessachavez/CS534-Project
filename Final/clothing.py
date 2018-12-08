@@ -15,7 +15,6 @@ import sys
 
 
 # Function to overlay a transparent image on background
-# https://pytech-solution.blogspot.com/2017/07/alphablending.html
 def transparentOverlay(src , overlay , pos=(0,0),scale = 1):
     """
     :param src: Input Color Background Image
@@ -39,7 +38,6 @@ def transparentOverlay(src , overlay , pos=(0,0),scale = 1):
     return src
 
 # Function to turn black pixels transparent
-# https://stackoverflow.com/questions/765736/using-pil-to-make-all-white-pixels-transparent
 def removeBlack(infile, outfile):
 	img = Image.open(infile)
 	img = img.convert("RGBA")
@@ -72,7 +70,6 @@ def main():
 
  	# NOTE: Requires the mask of the image generated using Fashion.py
 
- 	# https://stackoverflow.com/questions/49098518/specifying-a-rectangle-around-a-binary-object-to-define-a-spatially-constrained
 	# Put a bounding box around the ROI (Region of Intrest) in the backgroundmask.jpg
 	# Gets the coordinates of the bounding box as:
 	# x: Distance from the left side of background.jpg to the left edge of the bounding box
